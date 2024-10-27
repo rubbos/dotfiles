@@ -116,14 +116,13 @@ if command -v tmux &>/dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && 
   exec tmux
 fi
 
+# Show tab autosuggestions
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
+# Paths
 export PATH="/opt/nvim/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin:~/go/bin
-
-# show ls after cd
-cd() {
-  builtin cd $@
-  ls
-}
 
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
