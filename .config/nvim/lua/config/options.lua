@@ -7,4 +7,4 @@ vim.opt.number = false
 vim.opt.relativenumber = false
 
 -- path with filename top right of buffer
-vim.opt.winbar = "%=%m %f"
+-- vim.opt.winbar = "%=%m %f"
