@@ -1,74 +1,49 @@
 // -*- mode: jsonc -*-
 {
-	"position": "bottom", // Waybar position 
-	"height": 24, // Waybar height 
-	"spacing": 0, // Gaps between modules 
+	"position": "bottom", 
+	"height": 24, 
+	"spacing": 0, 
 	"modules-left": [
-		"tray",
-		"custom/media"
+		"niri/workspaces",
+		"tray"
 	],
 	"modules-center": [
-		"niri/workspaces"
+		"clock"
 	],
 	"modules-right": [
-		"mpd",
 		"pulseaudio",
+		"backlight",
+		"bluetooth",
 		"network",
 		"cpu",
 		"memory",
 		"battery",
-		"power-profiles-daemon",
-		"clock"
+		"power-profiles-daemon"
 	],
-	"mpd": {
-		"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-		"format-disconnected": "Disconnected ",
-		"format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-		"unknown-tag": "N/A",
-		"interval": 5,
-		"consume-icons": {
-			"on": " "
-		},
-		"random-icons": {
-			"off": "<span color=\"#f53c3c\"></span> ",
-			"on": " "
-		},
-		"repeat-icons": {
-			"on": " "
-		},
-		"single-icons": {
-			"on": "1 "
-		},
-		"state-icons": {
-			"paused": "",
-			"playing": ""
-		},
-		"tooltip-format": "MPD (connected)",
-		"tooltip-format-disconnected": "MPD (disconnected)"
-	},
 	"tray": {
-		"icon-size": 21,
-		"spacing": 10,
-		"icons": {
-			"blueman": "bluetooth"
-		}
+	    "spacing": 10
 	},
 	"clock": {
-		"format": "{:%d-%m-%y %H:%M}",
+		"format": "{:%a %H:%M %d/%m/%Y}",
 		"tooltip": false
 	},
 	"cpu": {
-		"interval": 5,
-		"format": "CPU: {usage}%",
+		"interval": 1,
+		"format": " {load}GHz",
 		"tooltip": true
 	},
 	"memory": {
-		"format": "MEM: {}%",
-		"tooltip": true
+		"format": " {used:0.1f}GB/{total:0.1f}GB",
+		"interval": 5,
+		"tooltip": false
+	},    
+	// brightnessctl
+	"backlight": {
+		"format": "{icon} {percent}%",
+		"format-icons": ["", "", "", "", "", "", "", "", ""]
 	},
 	"battery": {
 		"states": {
-			"good": 95,
 			"warning": 30,
 			"critical": 15
 		},
@@ -77,7 +52,7 @@
 		"format-charging": " {icon} {capacity}%",
 		"format-plugged": " {capacity}%",
 		"format-alt": "{icon} {time}",
-		"format-icons": ["", "", "", "", ""],
+		"format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
 		"tooltip": false
 	},
 	"power-profiles-daemon": {
@@ -92,41 +67,32 @@
 		}
 	},
 	"network": {
-		"format-wifi": " {signalStrength}%",
+		"format-wifi": " ",
 		"format-ethernet": "{ipaddr}/{cidr} ",
-		"tooltip-format": "{essid} {ifname} via {gwaddr}",
+		"tooltip-format": "{essid} {ifname} via {gwaddr}, {signalStrength}%",
 		"format-disconnected": "Disconnected"
 	},
-"pulseaudio": {
-	"format": "{icon}  {format_source}",
-  "format-bluetooth": "{icon} {format_source}",
-  "format-bluetooth-muted": "{icon} {format_source}",
-  "format-muted": " {format_source}",
-  "format-source": "",
-  "format-source-muted": "",
-  "format-icons": {
-    "headphone": "",
-    "hands-free": "",
-    "headset": "",
-    "phone": "",
-    "portable": "",
-    "car": "",
-    "default": ["", "", ""]
-  },
-  "tooltip": false,
-  "on-click": "pavucontrol",
-},
-	"custom/media": {
-		"format": "{icon} {text}",
-		"return-type": "json",
-		"max-length": 40,
+	"pulseaudio": {
+		"format": "{format_source} {icon} {volume}%",
+		"format-bluetooth": "{format_source} {icon} {volume}%",
+		"format-muted": "{format_source}  0%",
+		"format-source": "",
+		"format-source-muted": "",
 		"format-icons": {
-			"spotify": "",
-			"default": "🎜"
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"default": ["", "", ""]
 		},
-		"escape": true,
-		"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-	// "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+		"tooltip": false,
+		"on-click": "pavucontrol"
 	},
-
+	"bluetooth": {
+		"format": "",
+		"format-disabled": "", 
+		"format-connected": "",
+		"tooltip-format": "{controller_alias}\t{controller_address}",
+		"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+		"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+	}
 }

@@ -4,7 +4,7 @@
 }
 
 window#waybar {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.3);
     border-bottom: 0px;
     transition-property: background-color;
     transition-duration: .5s;
@@ -79,10 +79,16 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
+#bluetooth {
     padding: 0 10px;
     color: white;
     background-color: transparent;
+}
+#bluetooth {
+    padding: 0 0 0 10px;
+}
+#network {
+    padding: 0 0 0 5px;
 }
 
 #window,
@@ -139,16 +145,6 @@ label:focus {
     background-color: #f53c3c;
 }
 
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
-}
-
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
@@ -156,52 +152,6 @@ label:focus {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
-}
-
-#idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
-}
-
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-#language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
 }
 
 #privacy {
