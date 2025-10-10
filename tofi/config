@@ -16,7 +16,7 @@
 	font = "/usr/share/fonts/jetbrains-mono-nl-fonts/JetBrainsMonoNL-Regular.ttf"
 
 	# Point size of text.
-	font-size = 20
+	font-size = 12
 
 	# Comma separated list of OpenType font feature settings to apply,
 	# if supported by the chosen font. The format is similar to the CSS
@@ -50,7 +50,7 @@
 	# Default text color
 	#
 	# All text defaults to this color if not otherwise specified.
-	text-color = #333333
+	text-color = #777777
 
 	# All pieces of text have the same theming attributes available:
 	#
@@ -102,7 +102,7 @@
 	# alternate-result-background-corner-radius = 0
 
 	# Selection text
-	selection-color = #CFFF04
+	selection-color = #FFFFFF
 	selection-background = #00000000
 	selection-background-padding = 0
 	selection-background-corner-radius = 0
@@ -142,10 +142,10 @@
 ### Text layout
 #
 	# Prompt to display.
-	prompt-text = ">"
+	prompt-text = ">>>"
 
 	# Extra horizontal padding between prompt and input.
-	prompt-padding = 24
+	prompt-padding = 12
 
 	# Placeholder input text.
 	placeholder-text = ""
@@ -158,7 +158,7 @@
 	result-spacing = 12 
 
 	# List results horizontally.
-	horizontal = false
+	horizontal = true
 
 	# Minimum width of input in horizontal mode.
 	min-input-width = 
@@ -168,16 +168,17 @@
 #
 	# Width and height of the window. Can be pixels or a percentage.
 	width = 100%
-	height = 100%
+	height = 24
+
 
 	# Window background color
-	background-color = #1B1D1EF3
+	background-color = #000
 
 	# Width of the border outlines in pixels.
 	outline-width = 0
 
 	# Border outline color
-	outline-color = #080800
+	outline-color-top = #0000
 
 	# Width of the border in pixels.
 	border-width = 0
@@ -189,10 +190,10 @@
 	corner-radius = 0
 
 	# Padding between borders and text. Can be pixels or a percentage.
-	padding-top = 44%
+	padding-top = 0
 	padding-bottom = 0
-	padding-left = 44%
-	padding-right = 0
+	padding-left = 20%
+	padding-right = 20%
 
 	# Whether to clip text drawing to be within the specified padding. This
 	# is mostly important for allowing text to be inset from the border,
@@ -213,7 +214,8 @@
 	#
 	# Supported values: top-left, top, top-right, right, bottom-right,
 	# bottom, bottom-left, left, center.
-	anchor = center
+	anchor = bottom-left
+
 
 	# Set the size of the exclusive zone.
 	#
