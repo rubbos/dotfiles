@@ -42,7 +42,6 @@ button:hover {
     color: #ffffff;
 }
 
-#pulseaudio:hover, 
 #battery:hover,
 #power-profiles-daemon:hover,
 #workspaces button:hover {
@@ -80,15 +79,21 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #bluetooth {
-    padding: 0 10px;
+    padding: 0 12px;
     color: white;
     background-color: transparent;
 }
 #bluetooth {
-    padding: 0 0 0 10px;
+    padding: 0 0 0 8px;
 }
 #network {
-    padding: 0 0 0 5px;
+    padding: 0 0 0 6px;
+}
+#battery {
+	padding: 0 12px 0 4px;
+}
+#pulseaudio {
+    padding: 0 0 0 8px;
 }
 
 #window,
@@ -115,10 +120,7 @@ button:hover {
     background-color: #eb4d4b;
 }
 #power-profiles-daemon {
-    min-width: 2em;
-}
-#pulseaudio {
-    min-width: 3em;
+    min-width: 1.5em;
 }
 #power-profiles-daemon.performance {
     background-color: #eb4d4b;
