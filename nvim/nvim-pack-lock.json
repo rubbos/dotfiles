@@ -65,6 +65,10 @@
       "src": "https://github.com/nvim-telescope/telescope.nvim",
       "version": "'0.1.8'"
     },
+    "toggleterm.nvim": {
+      "rev": "9a88eae",
+      "src": "https://github.com/akinsho/toggleterm.nvim"
+    },
     "typst-preview.nvim": {
       "rev": "1603d37",
       "src": "https://github.com/chomosuke/typst-preview.nvim"

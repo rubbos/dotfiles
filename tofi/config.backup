@@ -50,7 +50,7 @@
 	# Default text color
 	#
 	# All text defaults to this color if not otherwise specified.
-	text-color = #ffffff
+	text-color = #777777
 
 	# All pieces of text have the same theming attributes available:
 	#
@@ -68,19 +68,19 @@
 	#     Radius of background box corners in pixels
 
 	# Prompt text theme
-	prompt-color = #FFFFFF
+	prompt-color = #ADD8E6
 	prompt-background = #00000000
 	prompt-background-padding = 0
 	prompt-background-corner-radius = 0
 
 	# Placeholder text theme
-	placeholder-color = #FFFFFF
+	placeholder-color = #FFFFFFA8
 	placeholder-background = #00000000
 	placeholder-background-padding = 0
 	placeholder-background-corner-radius = 0
 
 	# Input text theme
-	input-color = #FFFFFF
+	input-color = #ADD8E6
 	input-background = #00000000
 	input-background-padding = 0
 	input-background-corner-radius = 0
@@ -103,7 +103,7 @@
 
 	# Selection text
 	selection-color = #000000
-	selection-background = #FFFFFF
+	selection-background = #ADD8E6
 	selection-background-padding = 12
 	selection-background-corner-radius = 0
 
@@ -172,7 +172,7 @@
 
 
 	# Window background color
-	background-color = #00000050
+	background-color = #000
 
 	# Width of the border outlines in pixels.
 	outline-width = 0
@@ -192,8 +192,8 @@
 	# Padding between borders and text. Can be pixels or a percentage.
 	padding-top = 0
 	padding-bottom = 0
-	padding-left = 10%
-	padding-right = 10%
+	padding-left = 20%
+	padding-right = 20%
 
 	# Whether to clip text drawing to be within the specified padding. This
 	# is mostly important for allowing text to be inset from the border,
@@ -214,7 +214,7 @@
 	#
 	# Supported values: top-left, top, top-right, right, bottom-right,
 	# bottom, bottom-left, left, center.
-	anchor = top
+	anchor = bottom-left
 
 
 	# Set the size of the exclusive zone.
@@ -225,7 +225,7 @@
 	#
 	# Values greater than 0 are only meaningful when tofi is anchored to a
 	# single edge.
-	exclusive-zone = 24
+	exclusive-zone = -1
 
 	# Window offset from edge of screen. Only has an effect when anchored
 	# to the relevant edge. Can be pixels or a percentage.
