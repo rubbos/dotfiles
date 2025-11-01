@@ -1,6 +1,6 @@
 vim.o.number = true
 vim.o.relativenumber = false
-vim.o.wrap = true
+vim.o.wrap = false
 vim.o.tabstop = 2
 vim.o.swapfile = false
 vim.o.scrolloff = 10
@@ -64,7 +64,7 @@ vim.lsp.config("lua_ls", {
 -- enable inline diagnostics
 vim.diagnostic.enable = true
 vim.diagnostic.config({
-        virtual_lines = true,
+        virtual_text = true,
       })
 
 -- language parser and better syntax highlighting
