@@ -22,7 +22,7 @@
         "volumeStep": 5
     },
     "bar": {
-        "backgroundOpacity": 0.5,
+        "backgroundOpacity": 1,
         "capsuleOpacity": 1,
         "density": "default",
         "exclusive": true,
@@ -31,8 +31,8 @@
         "marginVertical": 0,
         "monitors": [
         ],
-        "outerCorners": false,
-        "position": "bottom",
+        "outerCorners": true,
+        "position": "right",
         "showCapsule": false,
         "widgets": {
             "center": [
@@ -45,13 +45,6 @@
             ],
             "left": [
                 {
-                    "colorizeDistroLogo": false,
-                    "customIconPath": "",
-                    "icon": "noctalia",
-                    "id": "ControlCenter",
-                    "useDistroLogo": false
-                },
-                {
                     "diskPath": "/",
                     "id": "SystemMonitor",
                     "showCpuTemp": true,
@@ -63,7 +56,17 @@
                     "usePrimaryColor": true
                 },
                 {
-                    "hideMode": "hidden",
+                    "blacklist": [
+                        "Bluetooth Enabled"
+                    ],
+                    "colorizeIcons": true,
+                    "drawerEnabled": false,
+                    "id": "Tray",
+                    "pinned": [
+                    ]
+                },
+                {
+                    "hideMode": "visible",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
                     "maxWidth": 145,
@@ -73,27 +76,9 @@
                     "showVisualizer": false,
                     "useFixedWidth": false,
                     "visualizerType": "linear"
-                },
-                {
-                    "colorizeIcons": false,
-                    "hideMode": "hidden",
-                    "id": "ActiveWindow",
-                    "maxWidth": 145,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "useFixedWidth": false
                 }
             ],
             "right": [
-                {
-                    "blacklist": [
-                    ],
-                    "colorizeIcons": false,
-                    "drawerEnabled": true,
-                    "id": "Tray",
-                    "pinned": [
-                    ]
-                },
                 {
                     "id": "ScreenRecorder"
                 },
@@ -108,10 +93,6 @@
                 },
                 {
                     "displayMode": "onhover",
-                    "id": "Brightness"
-                },
-                {
-                    "displayMode": "onhover",
                     "id": "Bluetooth"
                 },
                 {
@@ -119,17 +100,17 @@
                     "id": "WiFi"
                 },
                 {
+                    "id": "PowerProfile"
+                },
+                {
                     "displayMode": "alwaysShow",
                     "id": "Battery",
                     "warningThreshold": 20
                 },
                 {
-                    "id": "PowerProfile"
-                },
-                {
                     "customFont": "",
                     "formatHorizontal": "HH:mm dd/MM/yy",
-                    "formatVertical": "HH mm - dd MM",
+                    "formatVertical": "HH mm",
                     "id": "Clock",
                     "useCustomFont": false,
                     "usePrimaryColor": true
@@ -178,7 +159,7 @@
                 "id": "media-sysmon-card"
             }
         ],
-        "position": "bottom_center",
+        "position": "center",
         "shortcuts": {
             "left": [
                 {
@@ -227,7 +208,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "animationDisabled": false,
         "animationSpeed": 2,
-        "avatarImage": "/home/ruben/Pictures/Wallpapers/wallhaven-yxdx2d.jpg",
+        "avatarImage": "/home/ruben/Pictures/Wallpapers/wallhaven-jexmpm.jpg",
         "compactLockScreen": false,
         "dimmerOpacity": 0.85,
         "enableShadows": false,
@@ -381,8 +362,8 @@
         "fontFixed": "JetBrains Mono NL",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0,
-        "panelsAttachedToBar": true,
-        "settingsPanelAttachToBar": true,
+        "panelsAttachedToBar": false,
+        "settingsPanelAttachToBar": false,
         "tooltipsEnabled": true
     },
     "wallpaper": {
@@ -397,7 +378,7 @@
             {
                 "directory": "/home/ruben/Pictures/Wallpapers",
                 "name": "eDP-1",
-                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-k88zgm.jpg"
+                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-xe6qdv.png"
             }
         ],
         "overviewEnabled": true,
