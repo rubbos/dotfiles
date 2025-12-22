@@ -57,7 +57,8 @@
                 },
                 {
                     "blacklist": [
-                        "Bluetooth Enabled"
+                        "Bluetooth Enabled",
+                        "Bluetooth Active"
                     ],
                     "colorizeIcons": true,
                     "drawerEnabled": false,
@@ -246,11 +247,11 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": false,
+        "enabled": true,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "5000"
     },
     "notifications": {
         "backgroundOpacity": 1,
@@ -378,11 +379,16 @@
             {
                 "directory": "/home/ruben/Pictures/Wallpapers",
                 "name": "eDP-1",
+                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-6ld5kx.png"
+            },
+            {
+                "directory": "/home/ruben/Pictures/Wallpapers",
+                "name": "HDMI-A-1",
                 "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-xe6qdv.png"
             }
         ],
         "overviewEnabled": true,
-        "panelPosition": "follow_bar",
+        "panelPosition": "center",
         "randomEnabled": false,
         "randomIntervalSec": 1800,
         "recursiveSearch": false,
