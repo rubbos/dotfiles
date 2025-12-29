@@ -22,8 +22,8 @@
         "volumeStep": 5
     },
     "bar": {
-        "backgroundOpacity": 0.8,
-        "capsuleOpacity": 1,
+        "backgroundOpacity": 0.9,
+        "capsuleOpacity": 0.9,
         "density": "default",
         "exclusive": true,
         "floating": false,
@@ -125,7 +125,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "matugenSchemeType": "scheme-expressive",
-        "predefinedScheme": "Ayu",
+        "predefinedScheme": "Gruvbox",
         "schedulingMode": "off",
         "useWallpaperColors": false
     },
@@ -144,7 +144,7 @@
                 "id": "audio-card"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "id": "weather-card"
             },
             {
@@ -163,9 +163,6 @@
                 },
                 {
                     "id": "ScreenRecorder"
-                },
-                {
-                    "id": "WallpaperSelector"
                 }
             ],
             "right": [
@@ -239,7 +236,7 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": true,
+        "enabled": false,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -366,12 +363,12 @@
         "enabled": true,
         "fillColor": "#000000",
         "fillMode": "crop",
-        "hideWallpaperFilenames": false,
+        "hideWallpaperFilenames": true,
         "monitors": [
             {
                 "directory": "/home/ruben/Pictures/Wallpapers",
                 "name": "eDP-1",
-                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-mllqe8.jpg"
+                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven_e881lw.jpg"
             },
             {
                 "directory": "/home/ruben/Pictures/Wallpapers",
@@ -388,14 +385,14 @@
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": "random",
-        "useWallhaven": false,
+        "useWallhaven": true,
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
         "wallhavenPurity": "100",
         "wallhavenQuery": "",
-        "wallhavenResolutionHeight": "",
+        "wallhavenResolutionHeight": "1080",
         "wallhavenResolutionMode": "atleast",
-        "wallhavenResolutionWidth": "",
-        "wallhavenSorting": "relevance"
+        "wallhavenResolutionWidth": "1920",
+        "wallhavenSorting": "toplist"
     }
 }
