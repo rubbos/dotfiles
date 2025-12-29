@@ -1,0 +1,3 @@
+font_family JetBrains Mono NL
+shell bash -ic "pfetch; exec bash"
+include current-theme.conf

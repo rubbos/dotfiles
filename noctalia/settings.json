@@ -22,13 +22,13 @@
         "volumeStep": 5
     },
     "bar": {
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.8,
         "capsuleOpacity": 1,
         "density": "default",
         "exclusive": true,
         "floating": false,
         "marginHorizontal": 0,
-        "marginVertical": 0,
+        "marginVertical": 0.26,
         "monitors": [
         ],
         "outerCorners": true,
@@ -127,7 +127,7 @@
         "matugenSchemeType": "scheme-expressive",
         "predefinedScheme": "Ayu",
         "schedulingMode": "off",
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -201,7 +201,7 @@
         "allowPanelsOnScreenWithoutBar": true,
         "animationDisabled": false,
         "animationSpeed": 1,
-        "avatarImage": "/home/ruben/Pictures/Wallpapers/wallhaven-jexmpm.jpg",
+        "avatarImage": "/home/ruben/Pictures/Wallpapers/wallhaven-zpp5yy.jpg",
         "compactLockScreen": false,
         "dimmerOpacity": 0.85,
         "enableShadows": false,
@@ -341,7 +341,7 @@
         "ghostty": false,
         "gtk": false,
         "kcolorscheme": false,
-        "kitty": false,
+        "kitty": true,
         "pywalfox": false,
         "qt": false,
         "spicetify": false,
@@ -352,7 +352,7 @@
     "ui": {
         "fontDefault": "JetBrains Mono NL",
         "fontDefaultScale": 1,
-        "fontFixed": "JetBrains Mono NL",
+        "fontFixed": "JetBrains Mono NL SemiBold",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0,
         "panelsAttachedToBar": true,
@@ -371,7 +371,7 @@
             {
                 "directory": "/home/ruben/Pictures/Wallpapers",
                 "name": "eDP-1",
-                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-6ld5kx.png"
+                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-mllqe8.jpg"
             },
             {
                 "directory": "/home/ruben/Pictures/Wallpapers",
