@@ -5,7 +5,7 @@
         "enableClipboardHistory": false,
         "pinnedExecs": [
         ],
-        "position": "center",
+        "position": "follow_bar",
         "sortByMostUsed": true,
         "terminalCommand": "xterm -e",
         "useApp2Unit": false
@@ -32,15 +32,18 @@
         "monitors": [
         ],
         "outerCorners": true,
-        "position": "right",
+        "position": "top",
         "showCapsule": false,
         "widgets": {
             "center": [
                 {
                     "characterCount": 2,
-                    "hideUnoccupied": false,
-                    "id": "Workspace",
-                    "labelMode": "index"
+                    "colorizeIcons": false,
+                    "hideUnoccupied": true,
+                    "id": "TaskbarGrouped",
+                    "labelMode": "index",
+                    "showNumbersOnlyWhenOccupied": false,
+                    "showWorkspaceNumbers": true
                 }
             ],
             "left": [
@@ -50,21 +53,14 @@
                     "showCpuTemp": true,
                     "showCpuUsage": true,
                     "showDiskUsage": true,
-                    "showMemoryAsPercent": false,
+                    "showMemoryAsPercent": true,
                     "showMemoryUsage": true,
-                    "showNetworkStats": false,
+                    "showNetworkStats": true,
                     "usePrimaryColor": true
                 },
                 {
-                    "blacklist": [
-                        "Bluetooth Enabled",
-                        "Bluetooth Active"
-                    ],
-                    "colorizeIcons": true,
-                    "drawerEnabled": false,
-                    "id": "Tray",
-                    "pinned": [
-                    ]
+                    "id": "Spacer",
+                    "width": 10
                 },
                 {
                     "hideMode": "visible",
@@ -80,14 +76,6 @@
                 }
             ],
             "right": [
-                {
-                    "id": "ScreenRecorder"
-                },
-                {
-                    "hideWhenZero": true,
-                    "id": "NotificationHistory",
-                    "showUnreadBadge": true
-                },
                 {
                     "displayMode": "onhover",
                     "id": "Volume"
@@ -110,11 +98,15 @@
                 },
                 {
                     "customFont": "",
-                    "formatHorizontal": "HH:mm dd/MM/yy",
+                    "formatHorizontal": "HH:mm | dd/MM/yyyy",
                     "formatVertical": "HH mm",
                     "id": "Clock",
                     "useCustomFont": false,
-                    "usePrimaryColor": true
+                    "usePrimaryColor": false
+                },
+                {
+                    "colorName": "primary",
+                    "id": "SessionMenu"
                 }
             ]
         }
@@ -132,7 +124,7 @@
         "generateTemplatesForPredefined": true,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "matugenSchemeType": "scheme-rainbow",
+        "matugenSchemeType": "scheme-expressive",
         "predefinedScheme": "Ayu",
         "schedulingMode": "off",
         "useWallpaperColors": true
@@ -160,7 +152,7 @@
                 "id": "media-sysmon-card"
             }
         ],
-        "position": "center",
+        "position": "top_center",
         "shortcuts": {
             "left": [
                 {
@@ -195,7 +187,7 @@
     "dock": {
         "backgroundOpacity": 1,
         "colorizeIcons": false,
-        "displayMode": "always_visible",
+        "displayMode": "auto_hide",
         "enabled": false,
         "floatingRatio": 0.5,
         "monitors": [
@@ -208,7 +200,7 @@
     "general": {
         "allowPanelsOnScreenWithoutBar": true,
         "animationDisabled": false,
-        "animationSpeed": 2,
+        "animationSpeed": 1,
         "avatarImage": "/home/ruben/Pictures/Wallpapers/wallhaven-jexmpm.jpg",
         "compactLockScreen": false,
         "dimmerOpacity": 0.85,
@@ -257,7 +249,7 @@
         "backgroundOpacity": 1,
         "criticalUrgencyDuration": 15,
         "enableKeyboardLayoutToast": true,
-        "enabled": true,
+        "enabled": false,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -363,8 +355,8 @@
         "fontFixed": "JetBrains Mono NL",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0,
-        "panelsAttachedToBar": false,
-        "settingsPanelAttachToBar": false,
+        "panelsAttachedToBar": true,
+        "settingsPanelAttachToBar": true,
         "tooltipsEnabled": true
     },
     "wallpaper": {
@@ -384,7 +376,7 @@
             {
                 "directory": "/home/ruben/Pictures/Wallpapers",
                 "name": "HDMI-A-1",
-                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-xe6qdv.png"
+                "wallpaper": "/home/ruben/Pictures/Wallpapers/wallhaven-6ld5kx.png"
             }
         ],
         "overviewEnabled": true,
